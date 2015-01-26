@@ -1,0 +1,26 @@
+<html>
+<body>
+ <h1>Hello</h1>
+ <hr />
+ <p> the embed</p>
+ <script type="text/javascript" src="https://c64.assets-yammer.com/assets/platform_embed.js"></script>
+ <div id="embedded-feed" style="height:400px;width:500px;"></div>
+ <script>
+ yam.connect.embedFeed({
+container: "#embedded-feed",
+feedType: "open-graph",
+network: "famillearmand",
+objectProperties: {
+url: "https://harakys.com/test/abc123_no_network_empty_users_4",
+type:  "file",
+title: "test_emebed_12345_no_network_empty_users_4.pdf",
+image: "https://dox.com/file/abc123.png"
+},
+private: true,
+users: [
+ {name : "nobody", "email" : "steff@harakys.com"}
+]
+});
+ </script>
+</body>
+</html>
